@@ -83,7 +83,7 @@
 <div class="wrap">
   <a class="back" href="index.html">&larr; Back to QuickLingo</a>
   <h1>Privacy Policy for QuickLingo — Select &amp; Understand</h1>
-  <div class="updated">Last updated: August 21, 2026</div>
+  <div class="updated">Last updated: August 28, 2026</div>
 
   <p>This Privacy Policy explains what information the QuickLingo Chrome extension ("QuickLingo," "the Extension," "we," "us") collects, how it is used, and the choices you have. QuickLingo is built to work with as little data as possible — there are no user accounts, and text you translate is never stored on our own servers.</p>
 
@@ -91,7 +91,7 @@
   <p>QuickLingo lets you highlight text on any webpage and instantly translate it or get a plain-language explanation, in a floating widget on the page itself.</p>
 
   <h2>2. Information We Collect</h2>
-  <p><strong>a) Text you choose to translate or explain.</strong> When you use the Translate feature, the selected or typed text is sent directly to Google's public translation service to produce the translation. When you use the Explain feature, the text is sent to our backend server (a Cloudflare Worker), which forwards it to a third-party AI provider (Groq, or Anthropic's Claude for Pro subscribers) to generate the explanation. We do not store the content of your translations or explanations on our own servers — it passes through only to generate a response.</p>
+  <p><strong>a) Text you choose to translate or explain.</strong> When you use the Translate feature, the selected or typed text is sent directly to Google's public translation service to produce the translation. When you use the Explain feature, the text is sent to our backend server (a Cloudflare Worker), which forwards it to a third-party AI provider (Groq) to generate the explanation. We do not store the content of your translations or explanations on our own servers — it passes through only to generate a response.</p>
   <p><strong>b) An anonymous installation ID.</strong> When you install QuickLingo, the Extension generates a random identifier (not linked to your name, email, or any personal account) and stores it on your device. This ID is sent to our backend solely to enforce free-tier usage limits and check Pro license status. It cannot identify you personally.</p>
   <p><strong>c) Information stored locally on your device</strong> (via <code>chrome.storage.local</code>, never transmitted to us except where noted):</p>
   <ul>
@@ -115,8 +115,7 @@
   <table>
     <tr><th>Service</th><th>Purpose</th><th>What's sent</th></tr>
     <tr><td>Google Translate</td><td>Translation</td><td>Selected/typed text, target language</td></tr>
-    <tr><td>Groq</td><td>Explain (free tier)</td><td>Selected/typed text, target language</td></tr>
-    <tr><td>Anthropic (Claude)</td><td>Explain (Pro tier)</td><td>Selected/typed text, target language</td></tr>
+    <tr><td>Groq</td><td>Explain (Free and Pro)</td><td>Selected/typed text, target language</td></tr>
     <tr><td>LemonSqueezy</td><td>Payment &amp; license verification</td><td>Billing details, license key</td></tr>
     <tr><td>Cloudflare</td><td>Backend hosting</td><td>Anonymous install ID, Explain text, usage counters</td></tr>
   </table>
@@ -124,7 +123,7 @@
   <h2>5. Permissions QuickLingo Requests, and Why</h2>
   <ul>
     <li><strong>Storage</strong> — to save your preferences, history, and saved words locally on your device.</li>
-    <li><strong>activeTab / scripting</strong> — to detect selected text and display the floating widget on the page you're viewing.</li>
+    <li><strong>Scripting</strong> — to detect selected text and display the floating widget on the page you're viewing.</li>
     <li><strong>Host permission (access to all websites)</strong> — QuickLingo works on any webpage you're reading, so it needs permission to run on any site. It does not read or transmit page content beyond the text you explicitly select or type.</li>
     <li><strong>Context menus</strong> — to add the "Translate with QuickLingo" / "Explain with QuickLingo" right-click options.</li>
   </ul>
@@ -143,7 +142,7 @@
   <p>You can clear your local history and saved words at any time from within the Extension, or uninstall it entirely to remove all locally stored data. Since QuickLingo does not maintain user accounts, most data requests can be fulfilled by clearing local storage. For questions about data sent to our backend, contact us below.</p>
 
   <h2>9. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+  <p>We may update this Privacy Policy from time to time — for example, if we add a new AI provider for the Explain feature. Changes will be posted on this page with an updated "Last updated" date.</p>
 
   <h2>10. Contact Us</h2>
   <p>If you have questions about this Privacy Policy, please contact us at: <strong><a href="mailto:quicklingo.support@gmail.com">quicklingo.support@gmail.com</a></strong></p>
